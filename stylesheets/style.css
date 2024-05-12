@@ -1,4 +1,16 @@
 body {
-    background: repeat url("../images/backgrounds/mochaGrunge.png");
+    /*Artsy green*/
+    background: url("../images/backgrounds/pexels-steve.jpg") repeat;
+    background-size: 2000px;
+
+    /* Cement */
+    /*background: url("../images/backgrounds/mochaGrunge.png") repeat;*/
 }
+
+nav {
+    font-size: x-large;
+}
+
+
+
 

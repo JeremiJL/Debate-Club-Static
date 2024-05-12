@@ -1,7 +1,13 @@
-#general-tab:hover, #lincoln-tab:hover, #paris-tab:hover #negotiations-tab {
-    color: #000  ;
-}
-
 #general-tab, #lincoln-tab, #paris-tab, #negotiations-tab {
     color: #000;
+    opacity: 0.75;
 }
+
+#general-tab:hover, #lincoln-tab:hover, #paris-tab:hover, #negotiations-tab:hover {
+    opacity: 1;
+}
+
+#general-tab:active, #lincoln-tab:active, #paris-tab:active, #negotiations-tab:active {
+    opacity: 1;
+}
+
