@@ -14,6 +14,12 @@ footer {
     font-size: x-large;
 }
 
+.form-check {
+    position: absolute;
+    right: 10px;
+    font-size: medium;
+}
+
 .montserrat {
      font-family: "Montserrat", sans-serif;
      font-optical-sizing: auto;
@@ -26,5 +32,7 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+
+
 
 
