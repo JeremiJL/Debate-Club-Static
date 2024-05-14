@@ -1,16 +1,23 @@
 body {
-    /*Artsy green*/
-    background: url("../images/backgrounds/pexels-steve.jpg") repeat;
-    background-size: 2000px;
-
-    /* Cement */
-    /*background: url("../images/backgrounds/mochaGrunge.png") repeat;*/
+    font-family: "Montserrat", sans-serif;
 }
 
 nav {
-    font-size: x-large;
+    font-size: xx-large;
+    font-family: "Koulen", sans-serif;
 }
 
+.montserrat {
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 20;
+     font-style: normal;
+}
 
+.koulen-regular {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 
