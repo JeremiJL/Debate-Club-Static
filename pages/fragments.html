@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- My dark mode script   -->
+<!--    <script src="../functions/darkMode.js"></script>-->
+
 
 </head>
 <body id="body" class="bg-white text-dark">
@@ -79,7 +82,7 @@
 <!--    </div>-->
 <!--</warning>-->
 
-<footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center px-3 py-3 mt-4 border-top border-dark fixed-bottom text-white bg-dark">
+<footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center px-3 pt-3 pb-1 mt-4 border-top border-dark fixed-bottom text-white bg-dark">
 
     <p class="col-md-4 mb-0">The Debate Club</p>
 
@@ -91,6 +94,11 @@
         <li class="nav-item"><a href="aboutus.html" class="nav-link text-danger">About Us</a></li>
     </ul>
 
+    <div class="mt-0 pt-0">
+        <img id="instagram_logo" class="bi me-2" src="../images/icons/instagram-white.png" width="16" height="16" alt="Our Instagram">
+        <img id="facebook_logo" class="bi me-2" src="../images/icons/facebook-white.png" width="16" height="16" alt="Our Instagram">
+    </div>
+
 </footer>
 
 
@@ -98,59 +106,84 @@
 
 <script>
 
+    <!--  PjaitLogo   -->
     const whiteTextPjaitLogo = document.getElementById("pjait_logo").src.toString();
     const darkTextPjaitLogo = "../images/icons/logo-pjatk.png";
 
-    const themeComponents = ["header_navbar","body","footer"];
+    <!--  Instagram Logo   -->
+    const whiteInstagramLogo = document.getElementById("instagram_logo").src.toString();
+    const darkInstagramLogo = "../images/icons/instagram-dark.png";
+
+    <!--  Facebook Logo   -->
+    const whiteFaceBookLogo = document.getElementById("facebook_logo").src.toString();
+    const darkFaceBookLogo = "../images/icons/facebook-dark.png";
+
+    const themeComponents = ["header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab"];
     function changeToWhite() {
 
         for (element_id of themeComponents) {
 
-            let element = document.getElementById(element_id);
+            if (document.getElementById(element_id) != null) {
 
-            // switch backgrounds
-            if (element.classList.contains("bg-dark")) {
-                // remove
-                element.classList.remove("bg-dark");
-                // add
-                element.classList.add("bg-white");
-            } else {
-                // remove
-                element.classList.remove("bg-white");
-                // add
-                element.classList.add("bg-dark");
-            }
-            // switch navbars
-            if (element.classList.contains("navbar-dark")) {
-                // remove
-                element.classList.remove("navbar-dark");
-                // add
-                element.classList.add("navbar-white");
-            } else {
-                // remove
-                element.classList.remove("navbar-white");
-                // add
-                element.classList.add("navbar-dark");
-            }
-            // switch text colors
-            if (element.classList.contains("text-dark")) {
-                // remove
-                element.classList.remove("text-dark");
-                // add
-                element.classList.add("text-white");
-            } else {
-                // remove
-                element.classList.remove("text-white");
-                // add
-                element.classList.add("text-dark");
-            }
+                let element = document.getElementById(element_id);
+
+                // switch backgrounds
+                if (element.classList.contains("bg-dark")) {
+                    // remove
+                    element.classList.remove("bg-dark");
+                    // add
+                    element.classList.add("bg-white");
+                } else {
+                    // remove
+                    element.classList.remove("bg-white");
+                    // add
+                    element.classList.add("bg-dark");
+                }
+                // switch navbars
+                if (element.classList.contains("navbar-dark")) {
+                    // remove
+                    element.classList.remove("navbar-dark");
+                    // add
+                    element.classList.add("navbar-white");
+                } else {
+                    // remove
+                    element.classList.remove("navbar-white");
+                    // add
+                    element.classList.add("navbar-dark");
+                }
+                // switch text colors
+                if (element.classList.contains("text-dark")) {
+                    // remove
+                    element.classList.remove("text-dark");
+                    // add
+                    element.classList.add("text-white");
+                } else {
+                    // remove
+                    element.classList.remove("text-white");
+                    // add
+                    element.classList.add("text-dark");
+                }
 
 
-            // Change logo
-            if (document.getElementById("pjait_logo").src.toString() == whiteTextPjaitLogo) {
-                document.getElementById("pjait_logo").src = darkTextPjaitLogo;
-            } else {
-                document.getElementById("pjait_logo").src = whiteTextPjaitLogo;
+                // Change logo
+                // Pjait
+                if (document.getElementById("pjait_logo").src.toString() == whiteTextPjaitLogo) {
+                    document.getElementById("pjait_logo").src = darkTextPjaitLogo;
+                } else {
+                    document.getElementById("pjait_logo").src = whiteTextPjaitLogo;
+                }
+                // Instagram
+                if (document.getElementById("instagram_logo").src.toString() == whiteInstagramLogo) {
+                    document.getElementById("instagram_logo").src = darkInstagramLogo;
+                } else {
+                    document.getElementById("instagram_logo").src = whiteInstagramLogo;
+                }
+                // Facebook
+                if (document.getElementById("facebook_logo").src.toString() == whiteFaceBookLogo) {
+                    document.getElementById("facebook_logo").src = darkFaceBookLogo;
+                } else {
+                    document.getElementById("facebook_logo").src = whiteFaceBookLogo;
+                }
             }
 
         }

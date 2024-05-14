@@ -19,29 +19,32 @@
 
 
 </head>
-<body>
+<body id="body" class="bg-white text-dark">
 
 <!-- Header -->
 <header>
     <!-- Header Navbar -->
-    <nav class="navbar justify-content-center navbar-expand-sm bg-dark navbar-dark" >
-        <ul class="navbar-nav">
+    <nav id="header_navbar" class="navbar justify-content-center navbar-expand-sm bg-dark navbar-dark" >
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link mx-1" href="home.html">Home</a>
+                <a class="nav-link active mx-1" href="home.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link mx-1" href="rules.html" >Rules</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mx-1" href="joinus.html">Join Us</a>
+                <a class="nav-link mx-1" id="joinUsRedirection"  href="joinus.html">Join Us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link mx-1" href="news.html">News</a>
             </li>
         </ul>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onclick="changeToWhite()" checked>
+        </div>
     </nav>
-</header>
 
+</header>
 <!-- Main -->
 <main>
     <div class="container-flex mt-5 py-2 mb-2 px-5 mx-5">
@@ -53,18 +56,65 @@
             litora torquent per conubia nostra, per inceptos himenaeos. </p>
     </div>
     <div class="container-flex mt-3 py-2 mb-2 px-5 mx-5">
+        <div class="row align-items-start mb-5">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../images/plato.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Mr. Kosinki
+                        </div>
+                        <div class="card-text">
+                                <p class="my-0">Email : plato@gmail.com</p>
+                                <p class="my-0">Phone : +48 555 555 555</p>
+                                <p class="my-0">Role: Supervisor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../images/plato.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Filip
+                        </div>
+                        <div class="card-text">
+                            <p class="my-0">Email : plato@gmail.com</p>
+                            <p class="my-0">Phone : +48 555 555 555</p>
+                            <p class="my-0">Role: President</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../images/plato.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Amaliya
+                        </div>
+                        <div class="card-text">
+                            <p class="my-0">Email : plato@gmail.com</p>
+                            <p class="my-0">Phone : +48 555 555 555</p>
+                            <p class="my-0">Role: President</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row align-items-start">
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="../images/plato.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="card-title">
-                            Plato from Athens
+                            Jeremi
                         </div>
                         <div class="card-text">
-                                <p class="my-0">Email : plato@gmail.com</p>
-                                <p class="my-0">Phone : +48 555 555 555</p>
-                                <p class="my-0">Role: Debate enjoyer</p>
+                            <p class="my-0">Email : plato@gmail.com</p>
+                            <p class="my-0">Phone : +48 555 555 555</p>
+                            <p class="my-0">Role: Debate enjoyer</p>
                         </div>
                     </div>
                 </div>
@@ -89,7 +139,7 @@
                     <img class="card-img-top" src="../images/plato.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="card-title">
-                            Plato from Athens
+                            Somebody else
                         </div>
                         <div class="card-text">
                             <p class="my-0">Email : plato@gmail.com</p>
@@ -102,24 +152,127 @@
         </div>
     </div>
 
+    <div class="container-flex mt-5 py-2 mb-2 px-5 mx-5">
+        <h1>Contact Us</h1>
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nunc lobortis commodo massa, sit amet malesuada tellus mollis et.
+            Maecenas eget justo sed massa auctor mollis. Suspendisse potenti. Aenean rhoncus vehicula iaculis.
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad
+            litora torquent per conubia nostra, per inceptos himenaeos. </p>
+    </div>
+
 </main>
 
-
 <!-- Footer -->
-<footer class="d-flex flex-wrap justify-content-between align-items-center px-3 py-3 mt-4 border-top border-dark fixed-bottom  bg-dark">
-    <p class="col-md-4 mb-0 text-light">The Debate Club</p>
+<footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center px-3 pt-3 pb-1 mt-4 border-top border-dark fixed-bottom text-white bg-dark">
+
+    <p class="col-md-4 mb-0">The Debate Club</p>
 
     <a href="https://pja.edu.pl/en/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img class="bi me-2" src="../images/icons/logo-pjatk-white-text.png" width="108" height="56" alt="Polish-Japanese Academy of Information Technology">
+        <img id="pjait_logo" class="bi me-2" src="../images/icons/logo-pjatk-white-text.png" width="108" height="56" alt="Polish-Japanese Academy of Information Technology">
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-light">About Us</a></li>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link text-danger">About Us</a></li>
     </ul>
-    <!--    <img src="../images/icons/instagram.svg" alt="instagram">-->
+
+    <div class="mt-0 pt-0">
+        <img id="instagram_logo" class="bi me-2" src="../images/icons/instagram-white.png" width="16" height="16" alt="Our Instagram">
+        <img id="facebook_logo" class="bi me-2" src="../images/icons/facebook-white.png" width="16" height="16" alt="Our Instagram">
+    </div>
+
 </footer>
 
 
 </body>
+
+<script>
+
+    <!--  PjaitLogo   -->
+    const whiteTextPjaitLogo = document.getElementById("pjait_logo").src.toString();
+    const darkTextPjaitLogo = "../images/icons/logo-pjatk.png";
+
+    <!--  Instagram Logo   -->
+    const whiteInstagramLogo = document.getElementById("instagram_logo").src.toString();
+    const darkInstagramLogo = "../images/icons/instagram-dark.png";
+
+    <!--  Facebook Logo   -->
+    const whiteFaceBookLogo = document.getElementById("facebook_logo").src.toString();
+    const darkFaceBookLogo = "../images/icons/facebook-dark.png";
+
+    const themeComponents = ["header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab"];
+    function changeToWhite() {
+
+        for (element_id of themeComponents) {
+
+            if (document.getElementById(element_id) != null) {
+
+                let element = document.getElementById(element_id);
+
+                // switch backgrounds
+                if (element.classList.contains("bg-dark")) {
+                    // remove
+                    element.classList.remove("bg-dark");
+                    // add
+                    element.classList.add("bg-white");
+                } else {
+                    // remove
+                    element.classList.remove("bg-white");
+                    // add
+                    element.classList.add("bg-dark");
+                }
+                // switch navbars
+                if (element.classList.contains("navbar-dark")) {
+                    // remove
+                    element.classList.remove("navbar-dark");
+                    // add
+                    element.classList.add("navbar-white");
+                } else {
+                    // remove
+                    element.classList.remove("navbar-white");
+                    // add
+                    element.classList.add("navbar-dark");
+                }
+                // switch text colors
+                if (element.classList.contains("text-dark")) {
+                    // remove
+                    element.classList.remove("text-dark");
+                    // add
+                    element.classList.add("text-white");
+                } else {
+                    // remove
+                    element.classList.remove("text-white");
+                    // add
+                    element.classList.add("text-dark");
+                }
+
+
+                // Change logo
+                // Pjait
+                if (document.getElementById("pjait_logo").src.toString() == whiteTextPjaitLogo) {
+                    document.getElementById("pjait_logo").src = darkTextPjaitLogo;
+                } else {
+                    document.getElementById("pjait_logo").src = whiteTextPjaitLogo;
+                }
+                // Instagram
+                if (document.getElementById("instagram_logo").src.toString() == whiteInstagramLogo) {
+                    document.getElementById("instagram_logo").src = darkInstagramLogo;
+                } else {
+                    document.getElementById("instagram_logo").src = whiteInstagramLogo;
+                }
+                // Facebook
+                if (document.getElementById("facebook_logo").src.toString() == whiteFaceBookLogo) {
+                    document.getElementById("facebook_logo").src = darkFaceBookLogo;
+                } else {
+                    document.getElementById("facebook_logo").src = whiteFaceBookLogo;
+                }
+            }
+
+        }
+
+    }
+
+
+</script>
 
 </html>
