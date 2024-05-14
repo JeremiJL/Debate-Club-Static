@@ -2,9 +2,16 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+nav,footer {
+    font-family: "Koulen", sans-serif;
+}
+
 nav {
     font-size: xx-large;
-    font-family: "Koulen", sans-serif;
+}
+
+footer {
+    font-size: x-large;
 }
 
 .montserrat {
