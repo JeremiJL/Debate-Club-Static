@@ -25,9 +25,11 @@ body {
     /* ON and OFF */
     .cards-listed, .navbar-list {
         display: none;
+        visibility: hidden;
     }
     .cards-slides, .navbar-collapse {
         display: block;
+        visibility: visible;
     }
 
 }
@@ -42,6 +44,7 @@ body {
     header {
         font-size: calc(1.5rem + 0.8vw);
     }
+
     .card {
         font-size: calc(0.6rem + 0.4vw);
     }
@@ -53,9 +56,11 @@ body {
     /* ON and OFF */
     .cards-listed, .navbar-list {
         display: block;
+        visibility: visible;
     }
     .cards-slides, .navbar-collapse {
         display: none;
+        visibility: hidden;
     }
 }
 

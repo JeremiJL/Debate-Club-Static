@@ -23,12 +23,12 @@ const darkInstagramLogo = "../images/icons/instagram-dark.png";
 const whiteFaceBookLogo = document.getElementById("facebook_logo").src.toString();
 const darkFaceBookLogo = "../images/icons/facebook-dark.png";
 
-const themeComponents = ["header_navbar_mobile", "header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab"];
+const themeComponents = ["header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab","header_navbar_mobile"];
 function changeToWhite() {
 
     for (element_id of themeComponents) {
 
-        if (document.getElementById(element_id) != null && document.getElementById(element_id).checkVisibility()) {
+        if (document.getElementById(element_id) != null) {
 
             let element = document.getElementById(element_id);
 
@@ -68,41 +68,26 @@ function changeToWhite() {
                 // add
                 element.classList.add("text-dark");
             }
-            // // switch buttons colors
-            // if (element.classList.contains("btn-outline-dark")) {
-            //     // remove
-            //     element.classList.remove("btn-outline-dark");
-            //     // add
-            //     element.classList.add("btn-outline-light");
-            // } else {
-            //     // remove
-            //     element.classList.remove("btn-outline-light");
-            //     // add
-            //     element.classList.add("btn-outline-dark");
-            // }
-
-
-            // Change logo
-            // Pjait
-            if (document.getElementById("pjait_logo").src.toString() == whiteTextPjaitLogo) {
-                document.getElementById("pjait_logo").src = darkTextPjaitLogo;
-            } else {
-                document.getElementById("pjait_logo").src = whiteTextPjaitLogo;
-            }
-            // Instagram
-            if (document.getElementById("instagram_logo").src.toString() == whiteInstagramLogo) {
-                document.getElementById("instagram_logo").src = darkInstagramLogo;
-            } else {
-                document.getElementById("instagram_logo").src = whiteInstagramLogo;
-            }
-            // Facebook
-            if (document.getElementById("facebook_logo").src.toString() == whiteFaceBookLogo) {
-                document.getElementById("facebook_logo").src = darkFaceBookLogo;
-            } else {
-                document.getElementById("facebook_logo").src = whiteFaceBookLogo;
-            }
         }
-
     }
 
+    // Change logos
+    // Pjait
+    if (document.getElementById("pjait_logo").src.toString() == whiteTextPjaitLogo) {
+        document.getElementById("pjait_logo").src = darkTextPjaitLogo;
+    } else {
+        document.getElementById("pjait_logo").src = whiteTextPjaitLogo;
+    }
+    // Instagram
+    if (document.getElementById("instagram_logo").src.toString() == whiteInstagramLogo) {
+        document.getElementById("instagram_logo").src = darkInstagramLogo;
+    } else {
+        document.getElementById("instagram_logo").src = whiteInstagramLogo;
+    }
+    // Facebook
+    if (document.getElementById("facebook_logo").src.toString() == whiteFaceBookLogo) {
+        document.getElementById("facebook_logo").src = darkFaceBookLogo;
+    } else {
+        document.getElementById("facebook_logo").src = whiteFaceBookLogo;
+    }
 }
