@@ -11,7 +11,6 @@
 
   <!-- Override css styles -->
   <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/rules-style.css">
 
   <!-- Montserrat font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +51,7 @@
 
         <a class="navbar-brand" id="homeRedirection" href="home.html">Debate Club</a>
 
-        <button onclick="changeRedirectionName()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button id="buttonRedirection" onclick="changeRedirectionName()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -77,23 +76,21 @@
 <!-- Main -->
 <main class="d-flex flex-column min-vh-100">
   <!-- Title   -->
-  <div class="container-flex pt-5 pb-2 my-3">
-    <h1> Club Rules </h1>
-  </div>
+  <h1> Club Rules </h1>
   <!-- Navigation around rules of specific debate forms -->
   <div class="container-flex py-2">
     <ul class="nav nav-tabs " id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active text-white bg-dark" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">General Rules</button>
+        <button class="nav-link active text-black border border-black" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">General Rules</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link text-white bg-dark" id="paris-tab" data-bs-toggle="tab" data-bs-target="#paris" type="button" role="tab" aria-controls="paris" aria-selected="false">Paris Style</button>
+        <button class="nav-link text-black border border-black" id="paris-tab" data-bs-toggle="tab" data-bs-target="#paris" type="button" role="tab" aria-controls="paris" aria-selected="false">Paris Style</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link text-white bg-dark" id="lincoln-tab" data-bs-toggle="tab" data-bs-target="#lincoln" type="button" role="tab" aria-controls="lincoln" aria-selected="false">Lincoln–Douglas</button>
+        <button class="nav-link text-black border border-black" id="lincoln-tab" data-bs-toggle="tab" data-bs-target="#lincoln" type="button" role="tab" aria-controls="lincoln" aria-selected="false">Lincoln–Douglas</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link text-white bg-dark" id="negotiations-tab" data-bs-toggle="tab" data-bs-target="#negotiations" type="button" role="tab" aria-controls="negotiations" aria-selected="false">Negotiations</button>
+        <button class="nav-link text-black border border-black" id="negotiations-tab" data-bs-toggle="tab" data-bs-target="#negotiations" type="button" role="tab" aria-controls="negotiations" aria-selected="false">Negotiations</button>
       </li>
     </ul>
     <div class="tab-content py-2 border-bottom border-top border-secondary" id="myTabContent">

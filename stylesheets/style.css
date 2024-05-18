@@ -5,13 +5,21 @@ body {
 /* Font sizes for smaller devices */
 @media (max-width: 800px) {
     main {
-        margin-left: calc(1rem + 0.4vw);
-        margin-right: calc(1rem + 0.4vw);
-        margin-bottom: calc(5rem + 1vw);;
+        font-size: calc(1rem + 0.6vw);
+        margin: calc(3rem + 2vw) calc(1rem + 0.4vw) calc(5rem + 1vw);
     }
 
-    header {
-        font-size: calc(1.3rem + 0.8vw);
+    header,#homeRedirection,#buttonRedirection {
+        font-size: calc(1.5rem + 0.8vw);
+    }
+
+    #homeRedirection, #collapsibleNavbar {
+        margin-left: calc(1rem + 0.4vw);
+    }
+
+    h1 {
+        font-size: calc(1.5rem + 0.8vw);
+        margin-bottom: calc(2rem + 1vw);
     }
 
     .card {
@@ -37,14 +45,15 @@ body {
 @media (min-width: 800px) {
     main {
         font-size: calc(1rem + 0.6vw);
-        margin-left: calc(5rem + 1vw);
-        margin-right: calc(5rem + 1vw);
-        margin-bottom: calc(5rem + 1vw);;
+        margin: calc(4rem + 1vw) calc(5rem + 1vw) calc(5rem + 1vw);
     }
     header {
         font-size: calc(1.5rem + 0.8vw);
     }
-
+    h1 {
+        font-size: calc(1.5rem + 0.8vw);
+        margin-bottom: calc(2rem + 1vw);
+    }
     .card {
         font-size: calc(0.6rem + 0.4vw);
     }

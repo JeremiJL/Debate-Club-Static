@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debate CLub</title>
 
     <!-- Import bootstrap  -->
@@ -10,15 +11,13 @@
 
     <!-- Override css styles -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/rules-style.css">
 
     <!-- Montserrat font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- My dark mode script   -->
-<!--    <script src="../functions/darkMode.js"></script>-->
 
 
 </head>
@@ -52,6 +51,28 @@
 
 <!-- Main -->
 <main class="d-flex flex-column min-vh-100">
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+    </ul>
 
     <div class="container-flex py-2 px-5 mx-5">
         <p>Lorem ipsum dolor sit amet,
