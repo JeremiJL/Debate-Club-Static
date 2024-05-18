@@ -8,50 +8,51 @@ body {
         margin-left: calc(1rem + 0.4vw);
         margin-right: calc(1rem + 0.4vw);
     }
-    .cards-listed {
-        display: none;
+
+    header {
+        font-size: calc(1.2rem + 0.8vw);
     }
-    .cards-slides {
-        display: block;
-    }
+
     .card {
         font-size: calc(0.8rem + 0.4vw);
+    }
+
+    /* ON and OFF */
+    .cards-listed, .navbar-list {
+        display: none;
+    }
+    .cards-slides, .navbar-collapse {
+        display: block;
     }
 }
 
 @media (min-width: 800px) {
-    .cards-slides{
-        display: none;
-    }
-
-    .cards-listed {
-        display: block;
-    }
     main {
         font-size: calc(1rem + 0.6vw);
         margin-left: calc(5rem + 1vw);
         margin-right: calc(5rem + 1vw);
     }
+    header {
+        font-size: calc(1.5rem + 0.8vw);
+    }
     .card {
         font-size: calc(0.6rem + 0.4vw);
     }
+
+    /* ON and OFF */
+    .cards-listed, .navbar-list {
+        display: block;
+    }
+    .cards-slides, .navbar-collapse {
+        display: none;
+    }
 }
-
-
-
 
 
 nav,footer {
     font-family: "Koulen", sans-serif;
 }
 
-nav {
-    font-size: xx-large;
-}
-
-footer {
-    font-size: x-large;
-}
 
 .form-check {
     position: absolute;
