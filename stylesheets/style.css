@@ -7,6 +7,7 @@ body {
     main {
         margin-left: calc(1rem + 0.4vw);
         margin-right: calc(1rem + 0.4vw);
+        margin-bottom: calc(5rem + 1vw);;
     }
 
     header {
@@ -18,7 +19,7 @@ body {
     }
 
     footer {
-        font-size: calc(0.8rem + 0.6vw);
+        font-size: calc(1rem + 0.5vw);
     }
 
     /* ON and OFF */
@@ -36,6 +37,7 @@ body {
         font-size: calc(1rem + 0.6vw);
         margin-left: calc(5rem + 1vw);
         margin-right: calc(5rem + 1vw);
+        margin-bottom: calc(5rem + 1vw);;
     }
     header {
         font-size: calc(1.5rem + 0.8vw);
@@ -45,7 +47,7 @@ body {
     }
 
     footer {
-        font-size: calc(1rem + 0.6vw);
+        font-size: calc(1rem + 0.5vw);
     }
 
     /* ON and OFF */
@@ -58,7 +60,12 @@ body {
 }
 
 .form-check-input {
-    font-size: calc(1rem + 0.4vw);
+    font-size: calc(0.8rem + 0.4vw);
+}
+
+.icon {
+    width: calc(0.8rem + 0.4vw);
+    height: calc(0.8rem + 0.4vw);
 }
 
 

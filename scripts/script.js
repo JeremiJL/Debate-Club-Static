@@ -23,12 +23,12 @@ const darkInstagramLogo = "../images/icons/instagram-dark.png";
 const whiteFaceBookLogo = document.getElementById("facebook_logo").src.toString();
 const darkFaceBookLogo = "../images/icons/facebook-dark.png";
 
-const themeComponents = ["switchModeButton", "header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab"];
+const themeComponents = ["header_navbar_mobile", "header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab"];
 function changeToWhite() {
 
     for (element_id of themeComponents) {
 
-        if (document.getElementById(element_id) != null) {
+        if (document.getElementById(element_id) != null && document.getElementById(element_id).checkVisibility()) {
 
             let element = document.getElementById(element_id);
 
