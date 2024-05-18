@@ -10,11 +10,15 @@ body {
     }
 
     header {
-        font-size: calc(1.2rem + 0.8vw);
+        font-size: calc(1.3rem + 0.8vw);
     }
 
     .card {
         font-size: calc(0.8rem + 0.4vw);
+    }
+
+    footer {
+        font-size: calc(0.8rem + 0.6vw);
     }
 
     /* ON and OFF */
@@ -24,6 +28,7 @@ body {
     .cards-slides, .navbar-collapse {
         display: block;
     }
+
 }
 
 @media (min-width: 800px) {
@@ -39,6 +44,10 @@ body {
         font-size: calc(0.6rem + 0.4vw);
     }
 
+    footer {
+        font-size: calc(1rem + 0.6vw);
+    }
+
     /* ON and OFF */
     .cards-listed, .navbar-list {
         display: block;
@@ -48,16 +57,13 @@ body {
     }
 }
 
-
-nav,footer {
-    font-family: "Koulen", sans-serif;
+.form-check-input {
+    font-size: calc(1rem + 0.4vw);
 }
 
 
-.form-check {
-    position: absolute;
-    right: 10px;
-    font-size: medium;
+nav,footer {
+    font-family: "Koulen", sans-serif;
 }
 
 .montserrat {

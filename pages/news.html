@@ -41,9 +41,6 @@
                     <a class="nav-link active mx-1" href="news.html">News</a>
                 </li>
             </ul>
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onclick="changeToWhite()" checked>
-            </div>
         </nav>
     </div>
     <!-- Mobile Version -->
@@ -78,7 +75,7 @@
 <!-- Main -->
 <main class="d-flex flex-column min-vh-100">
     <!-- Title   -->
-    <div class="container-flex  pt-5 pb-2 my-3">
+    <div class="container-flex pt-5 pb-2 my-3">
         <h1> News </h1>
     </div>
     <!--  Text   -->
@@ -93,22 +90,28 @@
 </main>
 
 <!-- Footer -->
-<footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center px-3 pt-3 pb-1 mt-4 border-top border-dark fixed-bottom text-white bg-dark">
+<footer id="footer" class="container-flex mt-auto border-top border-dark text-white bg-dark">
 
-    <p class="col-md-4 mb-0">Debate Club</p>
+    <div class="row row-cols-3 py-2">
 
-    <a href="https://pja.edu.pl/en/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <img id="pjait_logo" class="bi me-2" src="../images/icons/logo-pjatk-white-text.png" width="108" height="56" alt="Polish-Japanese Academy of Information Technology">
-    </a>
+        <div class="col text-center">
+            <a href="home.html" class="nav-link py-1">Debate Club</a>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onclick="changeToWhite()" checked>
+        </div>
 
-    <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="aboutus.html" class="nav-link text-danger">About Us</a></li>
-    </ul>
+        <div class="col d-flex justify-content-center">
+            <a class="pt-2" href="https://pja.edu.pl/en/">
+                <img id="pjait_logo" src="../images/icons/logo-pjatk-white-text.png" width="108" height="56" alt="Polish-Japanese Academy of Information Technology">
+            </a>
+        </div>
 
-    <div class="mt-0 pt-0">
-        <img id="instagram_logo" class="bi me-2" src="../images/icons/instagram-white.png" width="16" height="16" alt="Our Instagram">
-        <img id="facebook_logo" class="bi me-2" src="../images/icons/facebook-white.png" width="16" height="16" alt="Our Instagram">
+        <div class="col text-center">
+            <a href="aboutus.html" class="nav-link text-danger py-1">About Us</a>
+            <img id="instagram_logo" class="mx-1" src="../images/icons/instagram-white.png" width="16" height="16" alt="Our Instagram">
+            <img id="facebook_logo" class="mx-1" src="../images/icons/facebook-white.png" width="16" height="16" alt="Our Instagram">
+        </div>
     </div>
+
 
 </footer>
 

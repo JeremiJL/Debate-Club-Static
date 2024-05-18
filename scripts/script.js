@@ -23,7 +23,7 @@ const darkInstagramLogo = "../images/icons/instagram-dark.png";
 const whiteFaceBookLogo = document.getElementById("facebook_logo").src.toString();
 const darkFaceBookLogo = "../images/icons/facebook-dark.png";
 
-const themeComponents = ["header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab"];
+const themeComponents = ["switchModeButton", "header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab"];
 function changeToWhite() {
 
     for (element_id of themeComponents) {
@@ -68,6 +68,18 @@ function changeToWhite() {
                 // add
                 element.classList.add("text-dark");
             }
+            // // switch buttons colors
+            // if (element.classList.contains("btn-outline-dark")) {
+            //     // remove
+            //     element.classList.remove("btn-outline-dark");
+            //     // add
+            //     element.classList.add("btn-outline-light");
+            // } else {
+            //     // remove
+            //     element.classList.remove("btn-outline-light");
+            //     // add
+            //     element.classList.add("btn-outline-dark");
+            // }
 
 
             // Change logo
