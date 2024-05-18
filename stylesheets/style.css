@@ -2,6 +2,45 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+/* Font sizes for smaller devices */
+@media (max-width: 800px) {
+    main {
+        margin-left: calc(1rem + 0.4vw);
+        margin-right: calc(1rem + 0.4vw);
+    }
+    .cards-listed {
+        display: none;
+    }
+    .cards-slides {
+        display: block;
+    }
+    .card {
+        font-size: calc(0.8rem + 0.4vw);
+    }
+}
+
+@media (min-width: 800px) {
+    .cards-slides{
+        display: none;
+    }
+
+    .cards-listed {
+        display: block;
+    }
+    main {
+        font-size: calc(1rem + 0.6vw);
+        margin-left: calc(5rem + 1vw);
+        margin-right: calc(5rem + 1vw);
+    }
+    .card {
+        font-size: calc(0.6rem + 0.4vw);
+    }
+}
+
+
+
+
+
 nav,footer {
     font-family: "Koulen", sans-serif;
 }
