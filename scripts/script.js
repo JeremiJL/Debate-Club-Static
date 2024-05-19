@@ -1,30 +1,46 @@
 <!-- Change Debate Club to Home after navbar collapse -->
-function changeRedirectionName(){
+function changeRedirectionName(onHomePage){
 
     let homeRedirection = document.getElementById("homeRedirection");
 
     if (homeRedirection.textContent == "Home"){
         homeRedirection.textContent = "Debate Club";
+        if (!onHomePage) {
+            homeRedirection.classList.remove("text-white-50");
+            homeRedirection.classList.remove("text-black-50");
+        }
     } else {
         homeRedirection.textContent = "Home";
+        if (!onHomePage){
+            if (!darkMode)
+                homeRedirection.classList.add("text-white-50");
+            else
+                homeRedirection.classList.add("text-black-50");
+        }
+
     }
 
 }
 
+// Dark Mode flag
+let darkMode = false;
+
 <!--  PjaitLogo   -->
-const whiteTextPjaitLogo = document.getElementById("pjait_logo").src.toString();
+const whiteTextPjaitLogo = document.getElementById("pjait_logo").src;
 const darkTextPjaitLogo = "../images/icons/logo-pjatk.png";
 
 <!--  Instagram Logo   -->
-const whiteInstagramLogo = document.getElementById("instagram_logo").src.toString();
+const whiteInstagramLogo = document.getElementById("instagram_logo").src;
 const darkInstagramLogo = "../images/icons/instagram-dark.png";
 
 <!--  Facebook Logo   -->
-const whiteFaceBookLogo = document.getElementById("facebook_logo").src.toString();
+const whiteFaceBookLogo = document.getElementById("facebook_logo").src;
 const darkFaceBookLogo = "../images/icons/facebook-dark.png";
 
-const themeComponents = ["header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab","header_navbar_mobile"];
-function changeToWhite() {
+const themeComponents = ["darkModeSwitch", "header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab","header_navbar_mobile"];
+function changeMode() {
+
+    darkMode = !darkMode;
 
     for (element_id of themeComponents) {
 

@@ -50,7 +50,7 @@
 
                 <a class="navbar-brand" id="homeRedirection" href="home.html">Debate Club</a>
 
-                <button onclick="changeRedirectionName()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <button onclick="changeRedirectionName(false)" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -63,7 +63,7 @@
                             <a class="nav-link" href="joinus.html">Join Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
+                            <a class="nav-link active" href="news.html">News</a>
                         </li>
                     </ul>
                 </div>
@@ -94,7 +94,7 @@
 
         <div class="col text-center">
             <a href="home.html" class="nav-link py-1">Debate Club</a>
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onclick="changeToWhite()" checked>
+            <button id="darkModeSwitch" type="button" class="btn text-dark bg-white" onclick="changeMode()">Dark Mode</button>
         </div>
 
         <div class="col d-flex justify-content-center">
