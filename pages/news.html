@@ -11,6 +11,7 @@
 
     <!-- Override css styles -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/calendar.css">
 
     <!-- Montserrat font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,13 +79,81 @@
     <h1> News </h1>
     <!--  Text   -->
     <div class="container-flex py-2">
-        <p>Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nunc lobortis commodo massa, sit amet malesuada tellus mollis et.
-            Maecenas eget justo sed massa auctor mollis. Suspendisse potenti. Aenean rhoncus vehicula iaculis.
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad
-            litora torquent per conubia nostra, per inceptos himenaeos. Nullam non fringilla libero, eu maximus massa.
-            Nullam eu orci ligula. Etiam tincidunt faucibus velit non volutpat. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet felis eget neque pulvinar porttitor sed id dui.
+            Integer euismod enim felis. </p>
     </div>
+    <hr>
+    <div class="container-flex py-2">
+        <div class="row align-items-start">
+            <div class="col">
+                <p class="lead" id="meeting-schedule-header">
+                    25 May 2024
+                </p>
+                <p id="meeting-schedule-content"> This day we will hold meeting at 3:00 PM, we are planning to do this and that ...
+                    <br> ... after this and that you are welcomed to get drunk with us ...
+                </p>
+            </div>
+            <div class="col">
+                <div class="container datepicker border border-1 border-dark">
+                    <div class="datepicker-top text-center">
+                        <div class="btn-group btn-sm">
+                            <button class="btn btn-dark" type="button"><img src="../images/icons/arrow_left.png" style="width: 32px"/></button>
+                            <button class="btn border-0 btn-white opacity-100" style="font-weight: bolder; font-size: 1rem; color:black" disabled>May 2024</button>
+                            <button class="btn btn-dark" type="button"><img src="../images/icons/arrow_right.png" style="width: 32px"/></button>
+                        </div>
+                    </div>
+                    <div class="datepicker-calendar">
+                        <span class="day">Mo</span>
+                        <span class="day">Tu</span>
+                        <span class="day">We</span>
+                        <span class="day">Th</span>
+                        <span class="day">Fr</span>
+                        <span class="day">Sa</span>
+                        <span class="day">Su</span>
+                        <button onclick="showDate(this.textContent)" class="date faded">29</button>
+                        <button onclick="showDate(this.textContent)" class="date faded">30</button>
+                        <button onclick="showDate(this.textContent)" class="date">1</button>
+                        <button onclick="showDate(this.textContent)" class="date">2</button>
+                        <button onclick="showDate(this.textContent)" class="date">3</button>
+                        <button onclick="showDate(this.textContent)" class="date">4</button>
+                        <button onclick="showDate(this.textContent)" class="date">5</button>
+                        <button onclick="showDate(this.textContent)" class="date">6</button>
+                        <button onclick="showDate(this.textContent)" class="date">7</button>
+                        <button onclick="showDate(this.textContent)" class="date">8</button>
+                        <button onclick="showDate(this.textContent)" class="date selected">9</button>
+                        <button onclick="showDate(this.textContent)" class="date">10</button>
+                        <button onclick="showDate(this.textContent)" class="date">11</button>
+                        <button onclick="showDate(this.textContent)" class="date">12</button>
+                        <button onclick="showDate(this.textContent)" class="date">13</button>
+                        <button onclick="showDate(this.textContent)" class="date">14</button>
+                        <button onclick="showDate(this.textContent)" class="date">15</button>
+                        <button onclick="showDate(this.textContent)" class="date">16</button>
+                        <button onclick="showDate(this.textContent)" class="date">17</button>
+                        <button onclick="showDate(this.textContent)" class="date">18</button>
+                        <button onclick="showDate(this.textContent)" class="date">19</button>
+                        <button onclick="showDate(this.textContent)" class="date">20</button>
+                        <button onclick="showDate(this.textContent)" class="date selected">21</button>
+                        <button onclick="showDate(this.textContent)" class="date">22</button>
+                        <button onclick="showDate(this.textContent)" class="date">23</button>
+                        <button onclick="showDate(this.textContent)" class="date">24</button>
+                        <button onclick="showDate(this.textContent)" class="date current-day">25</button>
+                        <button onclick="showDate(this.textContent)" class="date">26</button>
+                        <button onclick="showDate(this.textContent)" class="date">27</button>
+                        <button onclick="showDate(this.textContent)" class="date">28</button>
+                        <button onclick="showDate(this.textContent)" class="date selected">29</button>
+                        <button onclick="showDate(this.textContent)" class="date">30</button>
+                        <button onclick="showDate(this.textContent)" class="date">31</button>
+                        <button onclick="showDate(this.textContent)" class="date faded">1</button>
+                        <button onclick="showDate(this.textContent)" class="date faded">2</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
 </main>
 
 <!-- Footer -->
@@ -118,5 +187,6 @@
 
 <!-- My scripts  -->
 <script src="../scripts/script.js"></script>
+<script src="../scripts/calendar.js"></script>
 
 </html>

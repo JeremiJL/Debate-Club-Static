@@ -4,6 +4,15 @@ body {
 
 /* Font sizes for smaller devices */
 @media (max-width: 800px) {
+
+    .datepicker {
+        font-size: calc(0.8rem + 0.6vw);
+    }
+
+    .datepicker-top {
+        font-size: calc(0.5rem + 0.4vw);
+    }
+
     main {
         font-size: calc(1rem + 0.6vw);
         margin: calc(3rem + 2vw) calc(1rem + 0.4vw) calc(3rem + 2vw) ;
@@ -56,6 +65,15 @@ body {
 }
 
 @media (min-width: 800px) {
+
+    .datepicker {
+        font-size: calc(0.7rem + 0.6vw);
+    }
+
+    .datepicker-top {
+        font-size: calc(0.5rem + 0.4vw);
+    }
+
     main {
         font-size: calc(1rem + 0.6vw);
         margin: calc(4rem + 1vw) calc(5rem + 1vw) calc(5rem + 1vw);
