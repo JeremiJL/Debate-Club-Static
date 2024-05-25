@@ -17,6 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- Calcite   -->
+    <script type="module" src="https://js.arcgis.com/calcite-components/2.8.2/calcite.esm.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.8.2/calcite.css" />
+
 </head>
 
 <body id="body" class="bg-white text-dark">
@@ -48,6 +52,23 @@
 
 <!-- Main -->
 <main>
+
+
+    <calcite-date-picker value="2024-05-20"id="datePicker"
+            (onCalciteDatePickerChange)="printDate()"
+    ></calcite-date-picker>
+
+    <calcite-slider
+            min="1"
+            max="100"
+            onclick="changeToWhite()"
+    ></calcite-slider>
+
+    <div class="loader is-active padding-leader-3 padding-trailer-3">
+        <div class="loader-bars"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+
     <!-- Title   -->
     <div class="container-flex px-5 py-5 my-3 mx-5">
         <h1> The Debate Club </h1>
@@ -90,94 +111,7 @@
 
 </body>
 
-<script>
-
-    <!--  PjaitLogo   -->
-    const whiteTextPjaitLogo = document.getElementById("pjait_logo").src.toString();
-    const darkTextPjaitLogo = "../images/icons/logo-pjatk.png";
-
-    <!--  Instagram Logo   -->
-    const whiteInstagramLogo = document.getElementById("instagram_logo").src.toString();
-    const darkInstagramLogo = "../images/icons/instagram-dark.png";
-
-    <!--  Facebook Logo   -->
-    const whiteFaceBookLogo = document.getElementById("facebook_logo").src.toString();
-    const darkFaceBookLogo = "../images/icons/facebook-dark.png";
-
-    const themeComponents = ["header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab"];
-    function changeToWhite() {
-
-        for (element_id of themeComponents) {
-
-            if (document.getElementById(element_id) != null) {
-
-                let element = document.getElementById(element_id);
-
-                // switch backgrounds
-                if (element.classList.contains("bg-dark")) {
-                    // remove
-                    element.classList.remove("bg-dark");
-                    // add
-                    element.classList.add("bg-white");
-                } else {
-                    // remove
-                    element.classList.remove("bg-white");
-                    // add
-                    element.classList.add("bg-dark");
-                }
-                // switch navbars
-                if (element.classList.contains("navbar-dark")) {
-                    // remove
-                    element.classList.remove("navbar-dark");
-                    // add
-                    element.classList.add("navbar-white");
-                } else {
-                    // remove
-                    element.classList.remove("navbar-white");
-                    // add
-                    element.classList.add("navbar-dark");
-                }
-                // switch text colors
-                if (element.classList.contains("text-dark")) {
-                    // remove
-                    element.classList.remove("text-dark");
-                    // add
-                    element.classList.add("text-white");
-                } else {
-                    // remove
-                    element.classList.remove("text-white");
-                    // add
-                    element.classList.add("text-dark");
-                }
-
-
-                // Change logo
-                // Pjait
-                if (document.getElementById("pjait_logo").src.toString() == whiteTextPjaitLogo) {
-                    document.getElementById("pjait_logo").src = darkTextPjaitLogo;
-                } else {
-                    document.getElementById("pjait_logo").src = whiteTextPjaitLogo;
-                }
-                // Instagram
-                if (document.getElementById("instagram_logo").src.toString() == whiteInstagramLogo) {
-                    document.getElementById("instagram_logo").src = darkInstagramLogo;
-                } else {
-                    document.getElementById("instagram_logo").src = whiteInstagramLogo;
-                }
-                // Facebook
-                if (document.getElementById("facebook_logo").src.toString() == whiteFaceBookLogo) {
-                    document.getElementById("facebook_logo").src = darkFaceBookLogo;
-                } else {
-                    document.getElementById("facebook_logo").src = whiteFaceBookLogo;
-                }
-            }
-
-        }
-
-    }
-
-
-</script>
+<script src="../scripts/script.js"></script>
 
 
 </html>
