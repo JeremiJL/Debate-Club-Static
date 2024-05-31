@@ -1,23 +1,35 @@
 
 const header = document.getElementById("meeting-schedule-header");
-const content = document.getElementById("meeting-schedule-content");
+const contentTitle = document.getElementById("meeting-schedule-content-title");
+const contentTime = document.getElementById("meeting-schedule-content-time");
+const contentLocation = document.getElementById("meeting-schedule-content-location");
+const contentAgenda = document.getElementById("meeting-schedule-content-agenda");
+
 function showDate(date){
 
     header.textContent = date + " May 2024";
 
     switch(date) {
-        case "9":
-            content.textContent = "This day we will hold meeting at 3:00 PM, we are planning to do this and that ...\n" +
-                    "after this and that you are welcomed to get drunk with us ...";
-            break;
-        case "21":
-            content.textContent = "This day we will hold meeting at 5:00 PM, we are planning to do this and only this!!!! ...";
-            break;
-        case "29":
-            content.textContent = "This day we will hold meeting at 7:00 PM, we are planning to do this and that and that lorem ipsuumm?";
+        case "31":
+            // Set Visibility
+            contentTime.style.visibility = "visible";
+            contentLocation.style.visibility = "visible";
+            contentAgenda.style.visibility = "visible";
+
+            // Set Text
+            contentTitle.textContent = "Our first meeting!";
+            contentTime.textContent = "Time : 16:00";
+            contentLocation.textContent = "Location : Amphitheater at Lazienki Park";
+            contentAgenda.textContent = "Short lecture: 'Doubt Everything, Doubt Everyone', Team exercises, Paris-Impromptu Debate Session";
             break;
         default:
-            content.textContent = "We are not planning any meeting for this day.";
+            // Set Visibility
+            contentTime.style.visibility = "hidden";
+            contentLocation.style.visibility = "hidden";
+            contentAgenda.style.visibility = "hidden";
+
+            // Set Text
+            contentTitle.textContent = "We are not planning any meeting for this day.";
     }
 
 }

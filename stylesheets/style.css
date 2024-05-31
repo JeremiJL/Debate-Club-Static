@@ -1,6 +1,11 @@
-body, header {
-    font-family: "Montserrat", sans-serif;
+/*
+    VARIABLES
+*/
+
+:root {
+    --red:rgb(220,53,69);
 }
+
 
 /* Font sizes for smaller devices */
 @media (max-width: 800px) {
@@ -36,6 +41,11 @@ body, header {
         font-weight: bold;
     }
 
+    .highlighted-quote {
+        font-size: calc(1rem + 0.7vw);
+        margin-bottom: calc(1.4rem + 1vw);
+    }
+
     h2 {
         font-size: calc(1.2rem + 0.7vw);
         margin-bottom: calc(1.4rem + 0.8vw);
@@ -68,8 +78,8 @@ body, header {
 
 }
 
+/* Font sizes for larger devices */
 @media (min-width: 800px) {
-
 
     .datepicker {
         font-size: calc(0.7rem + 0.6vw);
@@ -81,9 +91,10 @@ body, header {
 
     main {
         line-height: 140%;
-        font-size: calc(1rem + 0.6vw);
+        font-size: calc(0.8rem + 0.5vw);
         margin: calc(4rem + 1vw) calc(5rem + 1vw) calc(5rem + 1vw);
     }
+
 
     .side-note {
         font-size: calc(0.9rem + 0.5vw);
@@ -102,6 +113,12 @@ body, header {
         margin-bottom: calc(1.4rem + 1vw);
         font-weight: bold;
     }
+
+    .highlighted-quote {
+        font-size: calc(1.2rem + 0.7vw);
+        margin-bottom: calc(1.4rem + 1vw);
+    }
+
     .card {
         font-size: calc(0.6rem + 0.4vw);
     }
@@ -127,9 +144,30 @@ body, header {
 
 }
 
+/*
+    FOR ALL
+*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 .btn {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+}
+.title-column {
+    font-weight: 600;
+}
+
+h1 {
+    opacity: 0;
+    color: var(--red);
+}
+
+.highlighted-quote {
+    font-style: italic;
+    text-align: center;
 }
 
 .icon {
@@ -142,7 +180,11 @@ header {
     letter-spacing: 2px;
 }
 
-footer,h1,h2 {
+.side-note {
+    font-style: italic;
+}
+
+footer,h1,h2,header {
     font-family: "Koulen", sans-serif;
     letter-spacing: 3px;
 }

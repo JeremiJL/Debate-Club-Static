@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/calendar.css">
 
+    <!-- jQuery    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
     <!-- Montserrat font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,19 +91,28 @@
         <div class="row align-items-start">
             <div class="col">
                 <p class="lead" id="meeting-schedule-header">
-                    25 May 2024
                 </p>
-                <p id="meeting-schedule-content"> This day we will hold meeting at 3:00 PM, we are planning to do this and that ...
-                    <br> ... after this and that you are welcomed to get drunk with us ...
+                <p id="meeting-schedule-content-title">
                 </p>
+                <ul>
+                    <li id="meeting-schedule-content-time" style="visibility: hidden">
+
+                    </li>
+                    <li id="meeting-schedule-content-location" style="visibility: hidden">
+
+                    </li>
+                    <li id="meeting-schedule-content-agenda" style="visibility: hidden">
+
+                    </li>
+                </ul>
             </div>
             <div class="col">
                 <div class="container datepicker border border-1 border-dark">
                     <div class="datepicker-top text-center">
                         <div class="btn-group btn-sm">
-                            <button class="btn btn-dark" type="button"><img src="../images/icons/arrow_left.png" style="width: 32px"/></button>
+<!--                            <button class="btn btn-dark" type="button"><img src="../images/icons/arrow_left.png" style="width: 32px"/></button>-->
                             <button class="btn border-0 btn-white opacity-100" style="font-weight: bolder; font-size: 1rem; color:black" disabled>May 2024</button>
-                            <button class="btn btn-dark" type="button"><img src="../images/icons/arrow_right.png" style="width: 32px"/></button>
+<!--                            <button class="btn btn-dark" type="button"><img src="../images/icons/arrow_right.png" style="width: 32px"/></button>-->
                         </div>
                     </div>
                     <div class="datepicker-calendar">
@@ -120,7 +133,7 @@
                         <button onclick="showDate(this.textContent)" class="date">6</button>
                         <button onclick="showDate(this.textContent)" class="date">7</button>
                         <button onclick="showDate(this.textContent)" class="date">8</button>
-                        <button onclick="showDate(this.textContent)" class="date selected">9</button>
+                        <button onclick="showDate(this.textContent)" class="date">9</button>
                         <button onclick="showDate(this.textContent)" class="date">10</button>
                         <button onclick="showDate(this.textContent)" class="date">11</button>
                         <button onclick="showDate(this.textContent)" class="date">12</button>
@@ -132,17 +145,17 @@
                         <button onclick="showDate(this.textContent)" class="date">18</button>
                         <button onclick="showDate(this.textContent)" class="date">19</button>
                         <button onclick="showDate(this.textContent)" class="date">20</button>
-                        <button onclick="showDate(this.textContent)" class="date selected">21</button>
+                        <button onclick="showDate(this.textContent)" class="date">21</button>
                         <button onclick="showDate(this.textContent)" class="date">22</button>
                         <button onclick="showDate(this.textContent)" class="date">23</button>
                         <button onclick="showDate(this.textContent)" class="date">24</button>
-                        <button onclick="showDate(this.textContent)" class="date current-day">25</button>
+                        <button onclick="showDate(this.textContent)" class="date">25</button>
                         <button onclick="showDate(this.textContent)" class="date">26</button>
                         <button onclick="showDate(this.textContent)" class="date">27</button>
                         <button onclick="showDate(this.textContent)" class="date">28</button>
-                        <button onclick="showDate(this.textContent)" class="date selected">29</button>
+                        <button onclick="showDate(this.textContent)" class="date">29</button>
                         <button onclick="showDate(this.textContent)" class="date">30</button>
-                        <button onclick="showDate(this.textContent)" class="date">31</button>
+                        <button onclick="showDate(this.textContent)" class="date current-day selected">31</button>
                         <button onclick="showDate(this.textContent)" class="date faded">1</button>
                         <button onclick="showDate(this.textContent)" class="date faded">2</button>
                     </div>

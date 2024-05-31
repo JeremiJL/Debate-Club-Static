@@ -1,4 +1,13 @@
-<!-- Change Debate Club to Home after navbar collapse -->
+// Fade in Animation
+
+$(document).ready(function(){
+
+   $("h1").fadeTo("slow",1);
+
+});
+
+
+// Change Debate Club to Home after navbar collapse
 function changeRedirectionName(onHomePage){
 
     const homeRedirection = document.getElementById("homeRedirection");
@@ -20,22 +29,24 @@ function changeRedirectionName(onHomePage){
     }
 }
 
+
+
 // Dark Mode flag
 let darkMode = false;
 
-<!--  PjaitLogo   -->
+// PjaitLogo
 const pjaitLogo = document.getElementById("pjait_logo");
-const whiteTextPjaitLogo = "../images/icons/logo-pjatk-white-text.png";
+const whiteTextPjaitLogo = pjaitLogo.src;
 const darkTextPjaitLogo = "../images/icons/logo-pjatk.png";
 
-<!--  Instagram Logo   -->
+// Instagram Logo
 const instagramLogo = document.getElementById("instagram_logo");
-const whiteInstagramLogo = "../images/icons/instagram-white.png";
+const whiteInstagramLogo = instagramLogo.src;
 const darkInstagramLogo = "../images/icons/instagram-dark.png";
 
-<!--  Facebook Logo   -->
+// Facebook Logo
 const facebookLogo = document.getElementById("facebook_logo");
-const whiteFaceBookLogo = "../images/icons/facebook-white.png";
+const whiteFaceBookLogo = facebookLogo.src;
 const darkFaceBookLogo = "../images/icons/facebook-dark.png";
 
 const themeComponents = ["darkModeSwitch", "header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab","header_navbar_mobile"];
@@ -106,5 +117,16 @@ function changeMode() {
         facebookLogo.src = darkFaceBookLogo;
     } else {
         facebookLogo.src = whiteFaceBookLogo;
+    }
+}
+
+// Change to dark mode on phones
+let width = screen.width;
+console.log(width)
+if (width < 800 && !darkMode){
+    changeMode();
+} else {
+    if (width > 800 && darkMode){
+        changeMode();
     }
 }
