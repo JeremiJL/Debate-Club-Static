@@ -1,4 +1,4 @@
-body {
+body, header {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -18,6 +18,10 @@ body {
         margin: calc(3rem + 2vw) calc(1rem + 0.4vw) calc(3rem + 2vw) ;
     }
 
+    .side-note {
+        font-size: calc(0.8rem + 0.5vw);
+    }
+
     header,#homeRedirection,#buttonRedirection {
         font-size: calc(1.5rem + 0.8vw);
     }
@@ -27,13 +31,13 @@ body {
     }
 
     h1 {
-        font-size: calc(1.2rem + 0.8vw);
+        font-size: calc(1.6rem + 0.8vw);
         margin-bottom: calc(2rem + 1vw);
         font-weight: bold;
     }
 
     h2 {
-        font-size: calc(1.3rem + 0.7vw);
+        font-size: calc(1.2rem + 0.7vw);
         margin-bottom: calc(1.4rem + 0.8vw);
         margin-top: calc(0.5rem + 0.8vw);
         font-weight: bold;
@@ -66,6 +70,7 @@ body {
 
 @media (min-width: 800px) {
 
+
     .datepicker {
         font-size: calc(0.7rem + 0.6vw);
     }
@@ -75,19 +80,25 @@ body {
     }
 
     main {
+        line-height: 140%;
         font-size: calc(1rem + 0.6vw);
         margin: calc(4rem + 1vw) calc(5rem + 1vw) calc(5rem + 1vw);
     }
+
+    .side-note {
+        font-size: calc(0.9rem + 0.5vw);
+    }
+
     header {
         font-size: calc(1.5rem + 0.8vw);
     }
     h1 {
-        font-size: calc(1.5rem + 0.8vw);
+        font-size: calc(1.6rem + 0.9vw);
         margin-bottom: calc(2rem + 1vw);
         font-weight: bold;
     }
     h2 {
-        font-size: calc(1.4rem + 0.7vw);
+        font-size: calc(1.3rem + 0.7vw);
         margin-bottom: calc(1.4rem + 1vw);
         font-weight: bold;
     }
@@ -112,6 +123,8 @@ body {
         display: none;
         visibility: hidden;
     }
+
+
 }
 
 .btn {
@@ -124,9 +137,14 @@ body {
     height: calc(0.8rem + 0.4vw);
 }
 
+header {
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
 
-nav,footer {
+footer,h1,h2 {
     font-family: "Koulen", sans-serif;
+    letter-spacing: 3px;
 }
 
 .montserrat {
@@ -138,9 +156,10 @@ nav,footer {
 
 .koulen-regular {
     font-family: "Koulen", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
+
 
 
 

@@ -1,7 +1,7 @@
 <!-- Change Debate Club to Home after navbar collapse -->
 function changeRedirectionName(onHomePage){
 
-    let homeRedirection = document.getElementById("homeRedirection");
+    const homeRedirection = document.getElementById("homeRedirection");
 
     if (homeRedirection.textContent == "Home"){
         homeRedirection.textContent = "Debate Club";
@@ -17,24 +17,25 @@ function changeRedirectionName(onHomePage){
             else
                 homeRedirection.classList.add("text-black-50");
         }
-
     }
-
 }
 
 // Dark Mode flag
 let darkMode = false;
 
 <!--  PjaitLogo   -->
-const whiteTextPjaitLogo = document.getElementById("pjait_logo").src;
+const pjaitLogo = document.getElementById("pjait_logo");
+const whiteTextPjaitLogo = "../images/icons/logo-pjatk-white-text.png";
 const darkTextPjaitLogo = "../images/icons/logo-pjatk.png";
 
 <!--  Instagram Logo   -->
-const whiteInstagramLogo = document.getElementById("instagram_logo").src;
+const instagramLogo = document.getElementById("instagram_logo");
+const whiteInstagramLogo = "../images/icons/instagram-white.png";
 const darkInstagramLogo = "../images/icons/instagram-dark.png";
 
 <!--  Facebook Logo   -->
-const whiteFaceBookLogo = document.getElementById("facebook_logo").src;
+const facebookLogo = document.getElementById("facebook_logo");
+const whiteFaceBookLogo = "../images/icons/facebook-white.png";
 const darkFaceBookLogo = "../images/icons/facebook-dark.png";
 
 const themeComponents = ["darkModeSwitch", "header_navbar","body","footer","general-tab","paris-tab","lincoln-tab","negotiations-tab","header_navbar_mobile"];
@@ -89,21 +90,21 @@ function changeMode() {
 
     // Change logos
     // Pjait
-    if (document.getElementById("pjait_logo").src.toString() == whiteTextPjaitLogo) {
-        document.getElementById("pjait_logo").src = darkTextPjaitLogo;
+    if (pjaitLogo.src == whiteTextPjaitLogo) {
+        pjaitLogo.src = darkTextPjaitLogo;
     } else {
-        document.getElementById("pjait_logo").src = whiteTextPjaitLogo;
+        pjaitLogo.src = whiteTextPjaitLogo;
     }
     // Instagram
-    if (document.getElementById("instagram_logo").src.toString() == whiteInstagramLogo) {
-        document.getElementById("instagram_logo").src = darkInstagramLogo;
+    if (instagramLogo.src == whiteInstagramLogo) {
+        instagramLogo.src = darkInstagramLogo;
     } else {
-        document.getElementById("instagram_logo").src = whiteInstagramLogo;
+        instagramLogo.src = whiteInstagramLogo;
     }
     // Facebook
-    if (document.getElementById("facebook_logo").src.toString() == whiteFaceBookLogo) {
-        document.getElementById("facebook_logo").src = darkFaceBookLogo;
+    if (facebookLogo.src == whiteFaceBookLogo) {
+        facebookLogo.src = darkFaceBookLogo;
     } else {
-        document.getElementById("facebook_logo").src = whiteFaceBookLogo;
+        facebookLogo.src = whiteFaceBookLogo;
     }
 }
