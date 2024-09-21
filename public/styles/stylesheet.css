@@ -1,0 +1,207 @@
+/*
+    VARIABLES
+*/
+
+:root {
+    --red:rgb(220,53,69);
+    --white:rgb(255, 255, 255);
+    --icon-size:calc(1.7rem - 0.3vw)
+}
+
+
+/* Font sizes for smaller devices */
+@media (max-width: 800px) {
+
+    .datepicker {
+        font-size: calc(0.8rem + 0.6vw);
+    }
+
+    .datepicker-top {
+        font-size: calc(0.5rem + 0.4vw);
+    }
+
+    main {
+        font-size: calc(1rem + 0.6vw);
+        margin: calc(3rem + 2vw) calc(1rem + 0.4vw) calc(3rem + 2vw) ;
+    }
+
+    .side-note {
+        font-size: calc(0.8rem + 0.5vw);
+    }
+
+    header,#homeRedirection,#buttonRedirection {
+        font-size: calc(1.5rem + 0.8vw);
+    }
+
+    #homeRedirection, #collapsibleNavbar {
+        margin-left: calc(1rem + 0.4vw);
+    }
+
+    h1 {
+        font-size: calc(1.6rem + 0.8vw);
+        margin-bottom: calc(2rem + 1vw);
+        font-weight: bold;
+    }
+
+
+    .blockquote-footer {
+        font-size: calc(0.3rem + 0.5vw);
+    }
+
+    .highlighted-quote {
+        font-size: calc(1rem + 0.7vw);
+        margin-bottom: calc(1.4rem + 1vw);
+    }
+
+    h2 {
+        font-size: calc(1.2rem + 0.7vw);
+        margin-bottom: calc(1.4rem + 0.8vw);
+        margin-top: calc(0.5rem + 0.8vw);
+        font-weight: bold;
+    }
+
+    .card {
+        font-size: calc(0.8rem + 0.4vw);
+    }
+
+    footer {
+        font-size: calc(1rem + 0.5vw);
+    }
+
+    .btn {
+        font-size: calc(0.4rem + 0.2vw);
+    }
+
+}
+
+/* Font sizes for larger devices */
+@media (min-width: 800px) {
+
+    .datepicker {
+        font-size: calc(0.7rem + 0.6vw);
+    }
+
+    .datepicker-top {
+        font-size: calc(0.5rem + 0.4vw);
+    }
+
+    main {
+        line-height: 140%;
+        font-size: calc(0.8rem + 0.5vw);
+        margin: calc(4rem + 1vw) calc(5rem + 1vw) calc(5rem + 1vw);
+    }
+
+
+    .side-note {
+        font-size: calc(0.9rem + 0.5vw);
+    }
+
+    header {
+        font-size: calc(1.4rem + 0.8vw);
+    }
+    h1 {
+        font-size: calc(1.6rem + 1vw);
+        margin-bottom: calc(2rem + 1vw);
+        font-weight: bold;
+    }
+    h2 {
+        font-size: calc(1.3rem + 0.7vw);
+        margin-bottom: calc(1.4rem + 1vw);
+        font-weight: bold;
+    }
+
+    .blockquote-footer {
+        font-size: calc(0.5rem + 0.5vw);
+    }
+
+    .highlighted-quote {
+        font-size: calc(1.2rem + 0.7vw);
+        margin-bottom: calc(1.4rem + 1vw);
+    }
+
+    .card {
+        font-size: calc(0.6rem + 0.4vw);
+    }
+
+    .btn {
+        font-size: calc(0.4rem + 0.2vw);
+    }
+
+    footer {
+        font-size: calc(1.2rem + 0.5vw);
+    }
+}
+
+/*
+    FOR ALL
+*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--white);
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+#instagram_logo {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+#instagram_logo:hover {
+    width: calc(var(--icon-size) + 0.3vw);
+    height: calc(var(--icon-size) + 0.3vw);
+}
+
+.title-column {
+    font-weight: 600;
+}
+
+h1 {
+    color: var(--red);
+}
+
+.highlighted-quote {
+    font-style: italic;
+    text-align: center;
+}
+
+.icon {
+    width: calc(0.8rem + 0.4vw);
+    height: calc(0.8rem + 0.4vw);
+}
+
+header {
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.side-note {
+    text-align: center;
+}
+
+footer,h1,h2,header {
+    font-family: "Koulen", sans-serif;
+    letter-spacing: 3px;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+}
+
+.koulen-regular {
+    font-family: "Koulen", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
+
